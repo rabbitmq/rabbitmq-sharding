@@ -97,11 +97,11 @@ have the exchange called `shard.images`, we could define the following
 policy to shard it:
 
 ```bash
-$CTL set_policy images-shard "^shard.images$" '{"shards-per-node": 2, "routing-key": "1234"}'
+$CTL set_policy images-shard "^shard.images$" '{"shards-per-node": 2, "routing-key": "ignored"}'
 ```
 
 This will create `2` sharded queues per node in the cluster, and will
-bind those queus using the `"1234"` routing key.
+bind those queus using the `"ignored"` routing key.
 
 ## Building the plugin ##
 
