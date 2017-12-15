@@ -58,7 +58,7 @@ validate_shards_per_node(Term) when is_number(Term) ->
         true  ->
             ok;
         false ->
-            {error, "shards-per-node should be greater than 0, actually was ~p",
+            {error, "shards-per-node should be non-negative, actually was ~p",
              [Term]}
     end;
 validate_shards_per_node(Term) ->
