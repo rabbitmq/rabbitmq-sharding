@@ -1,5 +1,13 @@
 # RabbitMQ Sharding Plugin
 
+
+## This was migrated to https://github.com/rabbitmq/rabbitmq-server
+
+This repository has been moved to the main unified RabbitMQ "monorepo", including all open issues. You can find the source under [/deps/rabbitmq_sharding](https://github.com/rabbitmq/rabbitmq-server/tree/master/deps/rabbitmq_sharding).
+All issues have been transferred.
+
+## Overview
+
 This plugin introduces the concept of sharded queues for
 RabbitMQ. Sharding is performed by exchanges, that is, messages
 will be partitioned across "shard" queues by one exchange that we should
